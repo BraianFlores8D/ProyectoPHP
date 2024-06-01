@@ -336,7 +336,7 @@ img{
     font-weight: var(--font-semi);
 }
 
-/* OFFER */
+/* ADOPTA PERROS */
 .offer__bg{
     background: url("https://images.hola.com/imagenes/mascotas/20221010218764/abrazar-perro-produce-calma-bienestar-dn/1-149-802/abrazar-perro-produce-calma-bienestar-t.jpg") no-repeat center/cover;
     text-align: center;
@@ -362,7 +362,7 @@ img{
 }
 
 
-/* NEW ARRIVALS */
+/* NEW ARRIVALS 
 .new__container{
     row-gap: 2rem;
 }
@@ -394,7 +394,7 @@ img{
     align-items: center;
     background: rgba(229, 89, 71, .2);
     transition: .3s;
-}
+}*/
 
 /* NEWSLETTER */
 .newsletter{

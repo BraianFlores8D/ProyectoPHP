@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sesion.css">
+    <title>Iniciar Sesión</title>
+    
+</head>
+<body>  
+    
+    <div class="formulario">
+        <h2>Iniciar Sesión</h2>
+
+        <form action="" method="post" id="miFormulario">
+            <div class="email">
+                <input type="text" id="email" placeholder="Email">
+                <span id="emailError" class="error"></span>
+            </div>
+
+            <div class="contrasena">
+                <input type="password" id="contrasena" placeholder="Contraseña">
+                <span id="contrasenaError" class="error"></span>
+            </div>
+
+            <div class="recordar"> ¿Olvido su contraseña? </div>
+            <input type="submit" value="Iniciar">
+
+            <div class="registrarse">
+                ¿Quieres <a href="#">registrarse</a>?
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <script>
+        document.getElementById("miFormulario").addEventListener("submit", function(event){
+            event.preventDefault();
+
+            var email = document.getElementById("email").value;
+            var contrasena = document.getElementById("contrasena").value;
+            var emailError = document.getElementById("emailError");
+            var contrasenaError = document.getElementById("contrasenaError");
+            var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            emailError.textContent="";
+            contrasenaError.textContent="";
+
+    
+            if(email.trim() === ""){
+                emailError.textContent = "No puede estar vacio";
+                return;
+            }
+                
+            if(!regexEmail.test(email)){
+                emailError.textContent = "El email no cumple con los requisitos";
+                return;
+            }
+
+            if(contrasena.trim() === ""){
+                contrasenaError.textContent = "No puede estar vacio";
+                return;
+            }
+            
+            alert("El formulario se envió correctamente");
+        });
+    </script>
+</body>
+</html>

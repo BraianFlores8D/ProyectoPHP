@@ -16,6 +16,7 @@
 
     <!-- LINK CSS -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="API.css">
     <title>Tienda de Mascotas</title>
 </head>
 <body>
@@ -28,21 +29,21 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <img src="Perro.ico" alt="">
+                <a href="#"> <img src="Perro.ico" alt=""> </a>   
                 <a href="#" class="nav__logo">BIG DOG</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link  active">HOME</a></li>
-                    <li class="nav__item"><a href="#featured" class="nav__link">PRODUCTOS</a></li>
-                    <li class="nav__item"><a href="#new" class="nav__link">NUEVOS</a></li>
-                    <li class="nav__item"><a href="#suscribed" class="nav__link">CONTACTO</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link  active" title="Enlace al home">HOME</a></li>
+                    <li class="nav__item"><a href="#featured" class="nav__link" title="Enlace productos">PRODUCTOS</a></li>
+                    <li class="nav__item"><a href="#offer" class="nav__link" title="Enlace productos nuevos">ADOPTADOS</a></li>
+                    <li class="nav__item"><a href="#suscribed" class="nav__link" title="Enlace contacto">CONTACTO</a></li>
                 </ul>
             </div>
 
             <div>
-                <i class="fa-solid fa-user nav__user"></i>
+                <a href="Sesion.html" title="Enlace Iniciar Sesión" > <i class="fa-solid fa-user nav__user"></i></a> 
                 <i class="fa-solid fa-cart-shopping nav__cart"></i>
                 <i class="fa-solid fa-bars nav__toggle" id="nav-toggle"></i>
             </div>
@@ -54,10 +55,10 @@
         <section class="home" id="home">
             <div class="home__container bd-grid">
                 <div class="home__data">
-                    <h1 class="home__title"> PARA<br><span> DOGS</span></h1>
-                    <a href="#featured" class="button">COMPRAR</a>
+                    <h1 class="home__title" title="Titulo de la pagina"> PARA<br><span> DOGS</span></h1>
+                    <a href="#featured" class="button" title="Botón comprar">COMPRAR</a>
                 </div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKVCfLvRbyE6x-CNN62cMoI48LciOFu8KKJHD-N1TZLl3XnTia6gz7xegtIG6oswKFqA&usqp=CAU" alt=""  class="home__img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStKVCfLvRbyE6x-CNN62cMoI48LciOFu8KKJHD-N1TZLl3XnTia6gz7xegtIG6oswKFqA&usqp=CAU" alt="Imagen de perro"  class="home__img" title="Imagen de Perro" >
             </div>
         </section>
 
@@ -142,19 +143,27 @@
             </div>
         </section>
 
-        <!-- OFFER -->
-        <section class="offer section">
+        <!-- ADOPTA PERROS -->
+        <section class="offer section" id="offer">
             <div class="offer__bg">
                 <div class="offer__data">
-                    <h2 class="offer__title">Oferta especial</h2>
-                    <p class="offer__description">Ofertas especiales solo por esta semana </p>
+                    <h2 class="offer__title">Perros en adopción</h2>
+                    <p class="offer__description"> </p>
                     
-                    <a href="#" class="button">COMPRAR</a>
                 </div>
             </div>
         </section>
 
-        <!-- NEW ARRIVALS -->
+
+        <!-- API de Perro -->
+        <section class="sectionAdoptados "  >
+            <div class="APIgrid"  >
+
+            </div>
+
+        </section>
+
+        <!-- NEW ARRIVALS 
         <section class="new section" id="new">
             <h2 class="section-title">PRODUCTOS NUEVOS</h2>
             <a href="#" class="section-all">Ver Todos</a>
@@ -209,6 +218,7 @@
                 </div>
             </div>
         </section>
+        -->
 
         <!-- NEWSLETTER -->
         <section class="newsletter section" id="suscribed">
@@ -266,7 +276,7 @@
                 <ul>
                     <li><a href="#" class="footer__link">Home</a></li>
                     <li><a href="#" class="footer__link">Productos</a></li>
-                    <li><a href="#" class="footer__link">Nuevos</a></li>
+                    <li><a href="#" class="footer__link">Adoptados</a></li>
                     <li><a href="#" class="footer__link">Contacto</a></li>
                 </ul>
             </div>
@@ -299,5 +309,8 @@
 
     <!-- MAIN JS -->
     <script src="main.js"></script>
+    
+    <!-- API JS -->
+    <script src="API.js"></script>
 </body>
 </html>
